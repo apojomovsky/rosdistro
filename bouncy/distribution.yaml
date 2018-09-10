@@ -307,6 +307,21 @@ repositories:
       url: https://github.com/ros2/depthimage_to_laserscan.git
       version: bouncy
     status: developed
+  dummy_package:
+    doc:
+      type: git
+      url: https://github.com/apojomovsky/dummy_package.git
+      version: bouncy
+    release:
+      tags:
+        release: release/bouncy/{package}/{version}
+      version: 2.1.0-0
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/apojomovsky/dummy_package.git
+      version: bouncy
+    status: developed
   example_interfaces:
     doc:
       type: git
