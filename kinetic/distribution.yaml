@@ -6,6 +6,44 @@ release_platforms:
   ubuntu:
   - xenial
 repositories:
+  jog_arm:
+    doc:
+      type: git
+      url: https://github.com/UTNuclearRoboticsPublic/jog_arm.git
+      version: kinetic
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/UTNuclearRoboticsPublic/jog_arm-release.git
+      version: 0.0.3-2
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/UTNuclearRoboticsPublic/jog_arm.git
+      version: kinetic
+    status: developed
+  vision_visp:
+    doc:
+      type: git
+      url: https://github.com/lagadic/vision_visp.git
+      version: kinetic
+    release:
+      packages:
+      - vision_visp
+      - visp_auto_tracker
+      - visp_bridge
+      - visp_camera_calibration
+      - visp_hand2eye_calibration
+      - visp_tracker
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/lagadic/vision_visp-release.git
+      version: 0.10.0-0
+    source:
+      type: git
+      url: https://github.com/lagadic/vision_visp.git
+      version: kinetic-devel
+    status: maintained
   robot_navigation:
     doc:
       type: git
